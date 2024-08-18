@@ -23,7 +23,11 @@ const Color = () => {
     <>
       <div
         className="card"
-        style={{ backgroundColor: colorName, color: textColor }}
+        style={{
+          backgroundColor: colorName,
+          color: textColor,
+          border: colorName ? `2px solid ${colorName}` : '2px solid black',
+        }}
       >
         {colorName ? (
           <>
